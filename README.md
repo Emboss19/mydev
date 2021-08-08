@@ -12,6 +12,17 @@ Thus a component called **demoTitleList** is created.
 
 So total seven components are created for demoApp.
 
+
+Please see the Folder demo live screenshots
+
+For the image demoHome
+1 -> **demoHeader**
+2 -> **demoContent** 
+3 -> **demoFooter**
+
+For images demoTitleList movies /series the component is **demoTitleList**
+
+
 Note: There are no images given for series/movies on home page. Images are given for movie/series records.
 
 Are there any improvements you could make to your submission? 
