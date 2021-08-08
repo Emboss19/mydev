@@ -1,0 +1,31 @@
+<template>
+    <c-demo-header headertitle="Popular Titles"></c-demo-header>
+    <lightning-card>
+        <div class="slds-var-m-horizontal_medium">
+            <template if:true={displayList}>
+                <lightning-layout multiple-rows="true" horizontal-align="spread" >
+                    
+                <template for:each={displayList} for:item="entry">
+                    <lightning-layout-item key={entry.title} size="1.5" flexibility="auto" padding="around-small" class="slds-var-p-around_x-small">
+                        <lightning-card>
+                    <c-demo-title-list-item
+                        key={entry.title}
+                        title={entry.title}
+                        url={entry.url}
+                    ></c-demo-title-list-item>
+                </lightning-card>
+                        </lightning-layout-item>
+                    
+                </template>
+            </lightning-layout>
+                <template if:false={displayList.length}>
+                    <div>Loading...</div>
+                </template>
+            </template>
+            <template if:false={displayList}>
+                <div>Something went wrong...</div>
+            </template>
+        </div>
+    </lightning-card>
+    <c-demo-footer></c-demo-footer>
+</template>
