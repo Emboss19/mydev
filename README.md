@@ -10,6 +10,9 @@ This component is **demoTitle** which shows the choices using a basic component 
 Again to either go to Series page or Movies page a component is needed to list out the series or movioes records.
 Thus a component called **demoTitleList** is created.
 
+
+**demoTitleList** displays the first 21 entries with releaseYear  >= 2010 and sorted by the title  in ascending alphanumeric order.
+
 So total seven components are created for demoApp.
 
 
