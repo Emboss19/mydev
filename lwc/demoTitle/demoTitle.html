@@ -1,0 +1,32 @@
+<template>
+    <lightning-card>
+    <div class="slds-var-m-horizontal_medium">
+        <template if:true={programType}>
+            <lightning-layout multiple-rows="true" pull-to-boundary="small">
+                <lightning-layout-item size="3" class="slds-var-p-around_x-small">
+                    <lightning-card>
+               <div  data-name="series" onclick={handleViewDetailsClick}>
+                   <c-demo-title-list-item
+                    title="Program Series"
+                    ></c-demo-title-list-item> </div> 
+                </lightning-card>
+                <lightning-card>
+                    <div data-name="movies"  onclick={handleViewDetailsClick}>
+                        <c-demo-title-list-item                      
+                         title="Program Movies"
+                         ></c-demo-title-list-item> </div>
+                        </lightning-card>
+            <template if:false={programType.length}>
+                <div>Loading...</div>
+            </template>
+        </lightning-layout-item>
+        </lightning-layout>
+        </template>
+        <template if:false={programType}>
+            <div>Something went wrong...</div>
+        </template>
+        
+    </div>
+</lightning-card>
+    
+</template>
